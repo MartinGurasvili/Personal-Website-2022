@@ -1,0 +1,855 @@
+body {
+	margin: 0;
+	background-image: url("wallpaper2.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: auto;
+	font-family: Monospace;
+	font-size: 13px;
+	line-height: 24px;
+	max-width: 100%;
+	
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+	scroll-behavior: smooth;
+
+	
+}
+img{
+	pointer-events: none
+}
+/* This used to work for the parent element of button divs */ /* But it does not work with newer browsers, the below doesn't hide the play button parent div */  *::-webkit-media-controls-panel {   display: none!important;   -webkit-appearance: none; }  /* Old shadow dom for play button */  *::-webkit-media-controls-play-button {   display: none!important;   -webkit-appearance: none; }  /* New shadow dom for play button */  /* This one works! */  *::-webkit-media-controls-start-playback-button {   display: none!important;   -webkit-appearance: none; } 
+
+video::-webkit-media-controls-start-playback-button {   display: none !important; } 
+.loaderr
+{
+	position: absolute;
+	object-fit: cover;
+	width: 100%;
+	height: 500%;
+	background-color: #000;
+	opacity: 1;
+	z-index: 10;
+	display:block
+}
+* {
+	margin     : 0;
+	padding    : 0;
+	box-sizing : border-box;
+	max-width: 100%;
+
+  }
+
+html {
+	
+	 /* background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); */
+	background-color: #B6CACD;
+	scroll-behavior: smooth;
+	overflow-x: hidden; 
+	max-width: 100%;
+
+
+  }
+
+a:link {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+@font-face {
+	font-family: mais;
+	src: url(light.otf);
+  }
+@font-face {
+	font-family: maie;
+	src: url(Austin.otf);
+  }
+
+
+button {
+	cursor: pointer;
+	text-transform: uppercase;
+}
+.main{
+	/* color            : rgb(0, 0, 0); */
+	background-color: rgb(156, 183, 186);
+
+	zoom: 140%;
+    scroll-snap-type: y mandatory;
+	
+}
+.main section  {
+	height           : 1500px;
+	display          : flex;
+	scroll-snap-align: start;
+	
+  }
+  
+.aboutt{
+	background-color: rgb(156, 183, 186);
+	/* color            : rgb(0, 0, 0);
+	background-color: black; */
+	
+    scroll-snap-type: y mandatory;
+	zoom: 120%;
+}
+  .aboutt section 
+{
+	/* color            : rgb(0, 0, 0);
+	background-color: black; */
+	height           : 1000px;
+	display          : flex;
+	
+}
+
+.connect{
+	background-color: rgb(156, 183, 186);
+	/* color            : rgb(0, 0, 0);
+	background-color: black;
+	 */
+    scroll-snap-type: y mandatory;
+	zoom: 120%;
+	
+}
+.connect section 
+{
+	/* color            : rgb(0, 0, 0); */
+	height           : auto ;
+	display          : flex;
+	padding-bottom:50px;
+
+}
+.sticky {
+	position: fixed;
+	top: 30%;
+	width: 100%;
+  }
+  
+#info {
+	
+	font-weight: 10;
+	font-size:3rem;	
+	color: rgb(255, 255, 255);
+	/* mix-blend-mode: exclusion; */
+	place-content: center;
+	
+	box-sizing: border-box;
+	text-align: center;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	pointer-events: none;
+	z-index: 1; /* TODO Solve this in HTML */
+	
+}
+#info h1{
+	
+	
+	font-family:"maie";
+	width: 100%;
+	left: 30px;
+	
+	letter-spacing: 14px;
+	line-height:80%;
+	color: rgb(0, 255, 229);
+	font-size: 7rem;
+	z-index: 2;
+}
+#info h2{
+	position: relative; 
+	/* position: absolute; */
+	font-family:"mais";
+	width: 100%;
+	top: 33%;
+	font-size: 5rem;
+	
+}
+
+#abou {
+	place-content: center;
+	position: relative;
+	font-weight: 10;
+	color: rgb(255, 255, 255);
+	/* mix-blend-mode: exclusion; */
+
+	text-align: center;
+	
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	pointer-events: none;
+	z-index: 1; /* TODO Solve this in HTML */
+	
+}
+#abou h2{
+	position: absolute;
+	font-family:"mais";
+	width: 100%;
+	font-size: 4.3vh;
+	left: -1px;
+	
+}
+#abou h3{
+	position: absolute;
+	font-family:"mais";
+	width: 100%;
+	font-size: 2vh;
+
+	
+}
+#abouu {
+	place-content: center;
+	position: relative;
+	font-weight: 10;
+	color: rgb(255, 255, 255);
+	/* mix-blend-mode: exclusion; */
+
+	text-align: center;
+	
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	pointer-events: none;
+	z-index: 1; /* TODO Solve this in HTML */
+	
+}
+#abouu h2{
+	
+	position: absolute;
+
+	font-family:"mais";
+	width: 110%;
+	font-size: 4.3vh;
+	left: -1px;
+	
+}
+
+h1{
+	
+	font-family:"mais";
+	color: rgb(255, 255, 255);
+	font-size: 5.9rem;
+}
+.spacer{
+	position: relative;
+	height: 100px;
+}
+
+#info h3{
+	position: absolute;
+	font-family:"mais";
+	top: 30%;
+	width: 100%;
+	font-size: 3rem;
+}
+#lang{
+	font-weight: 10;
+	font-size:3rem;	
+	color: rgb(255, 255, 255);
+	/* mix-blend-mode: exclusion; */
+	place-content: center;
+	
+	box-sizing: border-box;
+	text-align: center;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	pointer-events: none;
+	z-index: 1;
+}
+#lang h3{
+	position: relative;
+	font-family:"mais";
+	
+	width: 100%;
+	font-size: 5rem;
+}
+
+h3{
+	
+	position: relative;
+	font-family:"mais";
+	
+	width: 100%;
+	font-size: 5rem;
+	text-align: center;
+}
+
+a, button, input, select {
+	pointer-events: auto;
+}
+
+.cproj {
+
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	border: 0.5px solid rgba(255, 255, 255, 0.16);
+	border-top-style: none;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	/* box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.1),3px 3px 5px rgba(0, 0, 0, 0.1); */
+}
+.cproj img{
+	max-width: 300px ;
+	position: relative;
+	max-height: 300px;
+	width: auto;
+	height: auto;
+	place-content: center;
+	opacity:1;
+	border-left: 50%;
+}
+.cproj h1{
+	position: relative;
+	font-family:"mais";
+	color: rgb(255, 255, 255);
+	width:  auto;
+	font-size: 2.5rem;
+	margin-top: 20px;
+	text-align: center;
+}
+.cproj p{
+	position: relative;
+	font-family:"mais";
+	color: rgb(255, 255, 255);
+	width: 75%;
+	text-align: center;
+	font-size: 1rem;
+	
+}
+.cproj a{
+	position: relative;
+	text-align: center;
+	font-family:"mais";
+	width: 100%;
+	color: rgb(0, 183, 255);
+	font-size: 1rem;
+}
+
+
+
+.arrows {
+	position: relative;
+	width: 42px;
+	height: 100px;
+	/* mix-blend-mode: exclusion; */
+	
+  }
+  
+  .arrows path {
+	/* mix-blend-mode: exclusion; */
+	stroke: #ffffff;
+	fill: transparent;
+	stroke-width: 3px;  
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+  }
+
+  
+  @keyframes arrow
+  {
+  0% {opacity:0}
+  40% {opacity:1}
+  80% {opacity:0}
+  100% {opacity:0}
+  }
+  
+  @-webkit-keyframes arrow /*Safari and Chrome*/
+  {
+  0% {opacity:0}
+  40% {opacity:1}
+  80% {opacity:0}
+  100% {opacity:0}
+  }
+  
+  .arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+  }
+  
+  .arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+  }
+  
+  .arrows path.a3 { 
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+  }
+
+
+  :root {
+	--no-of-slides: 4;
+	--slides-in-view: 4;
+	--slide-width: 600px;
+	--slide-height: auto;
+	--iteration-time: 100s;
+  }
+  
+ 
+
+
+  
+  .carousel__wrapper {
+	user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+	display: flex;
+	align-items: center;
+	
+	overflow: hidden;
+	border-radius: 25px;
+	width: 100%;
+	margin: 10px auto;
+	padding: 10px;
+	overflow-x:  scroll;
+  overscroll-behavior-inline: contain;
+  -ms-overflow-style: none;  
+	scrollbar-width: none;  
+	
+	
+  }
+  .carousel__wrapper::-webkit-scrollbar {
+	display: none;
+  }
+  .carousel {
+	padding:500px ;
+	
+	overflow: hidden;
+	width: calc(2 * var(--no-of-slides));
+	
+  }
+  
+  .carousel__slide {
+	margin: 10px;
+	animation: scroll var(--iteration-time) linear infinite;
+	display: flex;
+	flex-direction: column;
+	border-radius: 30px;
+	background-image:var(--image);
+	
+	flex: 0 0 auto;
+	width: var(--slide-width);
+	height: 290px;
+	box-sizing: border-box;
+	overflow:hidden;
+	place-content: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: 0.9;
+	place-content: center;
+	transition: ease-in-out all .2s;
+	
+  }
+  .carousel__title h1{
+	
+	position: relative;
+	text-align: center;
+	top: -40px;
+	z-index: 2;
+	transition: ease-in-out all .2s;
+  }
+  .blur {
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 1;
+	
+	/* bottom: -150px; */
+	background: rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur( 12px );
+	-webkit-backdrop-filter: blur( 12px );
+	height: 100%;
+	/* height: 1000px;*/
+	width: 100%;
+	border-radius: 25px;
+	 
+  }
+  .content {
+	position: relative;
+	z-index: 3;
+	opacity: 0;
+	/* mix-blend-mode: darken; */
+	color: white;
+	background-color: rgb(0, 255, 229,0.6);
+	top:-330px ;
+	transition: ease-in-out all .2s;
+	height: 150%;
+  }
+  .content p{
+	font-size:large;
+  }
+  .content a {
+	color:#ef0eff;
+	font-size:x-large;
+  }
+  .carousel__slide:hover .content {
+	opacity: 1;
+	transition: ease-in-out all .2s;
+}
+.carousel__slide:hover .carousel__title h1{
+	z-index: 4;
+	transition: ease-in-out all .2s;
+}
+	.carousel__slide:hover .carousel__appicon {
+		opacity: 0.1;
+		transition: ease-in-out all .2s;
+	}
+	/* .carousel__slide:hover .carousel__image {
+		opacity: 0.4;
+		transition: ease-in-out all .2s;
+	} */
+
+
+ 
+  
+  
+  .carousel__image {
+	border-radius: 25px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: 0.9;
+	
+	position: relative;
+	width: 110%;
+	/* top: 200px; */
+
+    
+	filter: blur(12px);
+	-webkit-filter: blur(12px);
+	place-content: center;
+	border: 0.5px solid rgba(0, 0, 0, 0.2);
+	transition: ease-in-out all .2s;
+	
+  }
+  .raised{
+	position:relative;top: -330px;border-radius: 100px;
+  }
+  
+  
+  .carousel__appicon {
+	
+	position: relative;
+	
+	opacity: 1;
+	height: 170px;
+	width: auto;
+	z-index: 2;
+	top: -40px;
+	transition: ease-in-out all .2s;
+  }
+
+  .social-buttons{
+	border-radius: 16px;
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	border: 0.5px solid rgba(255, 255, 255, 0.16);
+	border-top-style: none;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	place-content: center;
+	height: 60px;
+	transition: ease-in-out all .2s
+  }
+  .social-buttons:hover { 
+	background-color: rgba(0, 255, 217, 0.2);
+	transition: ease-in-out all .2s
+  }
+  .social-buttons img{
+	place-content: center;
+	width: auto;
+	height: inherit;
+  }
+
+  .social-card-top{
+	
+	width: 100%;
+	height: 70px;
+	background: rgba(0, 255, 255, 0.1);
+	border-radius: 25px 25px 0px 0px;
+	backdrop-filter: blur(30px);
+	-webkit-backdrop-filter: blur(30px);
+	border: 0.5px solid rgba(255, 255, 255, 0.16);
+	border-bottom-style: none;
+	place-content: center;
+  }
+  
+  .social-card{
+	
+	width: 100%;
+	min-height:300px ;
+	height: 60%;
+	background: rgba(255, 255, 255, 0);
+	border-radius: 0px 0px 25px 25px ;
+	
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	border: 0.5px solid rgba(255, 255, 255, 0.16);
+	border-top-style: none;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  
+	place-content: center;
+	transition: ease-in-out all .2s
+	
+  }
+  .social-card:hover { 
+	background-color: rgba(0, 255, 217, 0.2);
+	transition: ease-in-out all .2s
+  }
+  .social-card img{
+	width: 100px;
+	height: auto;
+	border-radius:60px ;
+  }
+  
+	.social-card h1{
+		position: relative;
+		font-family:"mais";
+		color: rgb(255, 255, 255);
+		width:  auto;
+		font-size: 2rem;
+		margin-top: 20px;
+		text-align: center;
+		text-decoration: none;
+	}
+	.social-card p{
+		position: relative;
+		font-family:"mais";
+		color: rgb(255, 255, 255);
+		width: 75%;
+		text-align: center;
+		font-size: 0.9rem;
+		text-decoration: none;
+		
+	}
+ 
+  .social-card-top img{
+	width: auto;
+	height: 70px;
+  }
+  .row
+  {
+	max-width: 110%;
+  }
+  
+  @keyframes load{
+	from {
+	  width: 0%
+	}
+  }
+  @-webkit-keyframes load{
+	from {
+	  width: 0%
+	}
+  }
+  @-moz-keyframes load{
+	from {
+	  width: 0%
+	}
+  }
+  @-o-keyframes load{
+	from {
+	  width: 0%
+	}
+  }
+  
+  .bar{
+	width: 90%;
+	background-color: rgba(255, 255, 255, 0.1);
+	
+	padding: 2px;
+	border-radius: 40px;
+	margin-bottom: 5px;
+	font-size: 20px;
+	font-family:"mais";
+	text-align: left;
+	color: #FFF;
+	font-weight: bold;
+
+	transition:1s;
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	
+  }
+  .bar img{
+	position: relative;
+	margin-top: -20px ;
+	top: 9px;
+	left: -30px;
+	width:auto;
+	height:40px ;
+  }
+  .bar::before{
+	content:  attr(data-skill);
+	width: calc(var(--wid) - 10px);
+	
+	background-color: var(--color);
+	display: inline-block;
+	padding: 5px 0 5px 10px;
+	border-radius: inherit;
+	animation: load 2s 0s;
+	-webkit-animation: load 2s 0s;
+	-moz-animation: load 2s 0s;
+	-o-animation: load 2s 0s;
+  }
+  #dropdown
+  {
+	margin-bottom: 10px;
+	width: 90%;
+	height: 50%;
+	background: rgb(255, 255, 255,0);
+	border-radius: 25px ;
+	font-family:"mais";
+	/* color: rgb(255, 255, 255); */
+	font-size: 350%;
+	
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	border: 0.5px solid rgba(255, 255, 255, 0.16);
+	border-top-style: none;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	place-content: center;
+  }
+  #dropdown:hover { 
+	background-color: rgba(0, 255, 217, 0.2);
+	
+  }
+
+
+  #v0 {
+	position: fixed;
+	object-fit: cover;
+	height: 100%;
+    width: 100%;
+
+    top:0;  
+    left:0;  
+    right:0;  
+    bottom:0;
+	
+  }
+  @media all and ( max-width: 1000px ) {
+
+	.aboutt section 
+	{
+		height: 1300px;
+	}
+  }
+
+  @media all and ( max-width: 600px ) {
+	
+	.bar{
+		font-size: 15px;
+	}
+	#info h2{
+		/* left: 20px; */
+		top: 8%;
+		zoom: 96%;
+		
+	}
+	#info h1{
+		left: 10px;
+		zoom: 96%;
+
+		
+	}
+	.carousel__wrapper {
+		--slide-width:130%;
+		width: 110%;
+    }
+	
+	 /* .carousel__image
+	{
+		position: relative;
+		width: 250%;
+		height: auto;
+		
+		
+	} */
+	.carousel__title
+	{
+		position: relative;
+		top: 20px;
+		
+	}
+	.carousel__title h1
+	{
+		font-size: 3.3vh;
+		
+	}
+	.content{
+		position: relative;
+		top:-280px ;
+	}
+	.carousel__appicon
+	{
+		position: relative;
+		top: -10px;
+		/* width:150px; */
+		
+	} 
+	.content p{
+		font-size:90%;
+	  }
+	  .content a {
+	
+		font-size:large;
+	  }
+	.spacer{
+		position: relative;
+		height: 200px;
+		width: 100px;
+	}
+	.social-buttons img{
+		margin: 2px;
+		width: 200px;
+		height: auto;
+	}
+	  .aboutt
+	  {
+		zoom: 90%;
+	  }
+	  
+	  .main
+	  {
+		zoom: 95%;
+	  }
+	  .connect
+	  {
+		zoom: 80%;
+	  }
+	  #abouu h2{
+		
+		font-size: 5vh;
+	
+		
+		}
+		
+
+		#dropdown
+		{
+			font-size: 260%;
+			width: 90%;
+		}
+		
+
+}
