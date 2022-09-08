@@ -2,7 +2,7 @@
 
 <div align="center">
   <a href="https://www.martingur.com">
-    <img width="200" height="200" alt="cas" src="https://user-images.githubusercontent.com/76784461/188332762-b9f9ef23-ac61-4378-bbd3-8b4aef850672.png">
+    <img width="200" height="200" alt="cas" src="https://github.com/MartinGurasvili/Personal-Website-2022/blob/main/img/earth.png?raw=true">
   </a>
 
 
@@ -20,7 +20,7 @@
 </div>
 <div align="center">
   <a href="www.martingur.com">
-    <img  src="https://user-images.githubusercontent.com/76784461/188333310-6bf96015-07c2-468c-894b-20fbe5186da3.gif">
+    <img  src="https://user-images.githubusercontent.com/76784461/189243971-355dc1e5-b823-461e-b28f-6caff9e68707.gif">
   </a>
 </div>
 
