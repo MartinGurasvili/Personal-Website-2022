@@ -18,8 +18,8 @@
 		
 		<div class="loaderr" tabindex="0" autobuffer="autobuffer" id="preloader"></div>
 		
-		<video id="v0" tabindex="0" autobuffer="autobuffer"  preload="metadata" muted preload >
-		  <source  type="video/webm" src="img/world1.webm" ></source>
+		<video id="v0" tabindex="0" autobuffer="autobuffer"  preload="metadata" muted preload src="img/world1.webm">
+		  <!-- <source  type="video/webm" src="img/world1.webm" ></source> -->
 		</video>
 
 		
@@ -1131,7 +1131,12 @@ This is a sudoku game aswell as solver
 	<script>
 		
 		video = document.getElementById('v0'); 
-		
+		var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+		if (isIOS) {
+    	video.src = 'img/world.mp4';
+		//video.setAttribute('type', 'mp4');
+		video.load();
+		}
 		const scrollVideo = ()=>{
 			if(video.duration) {
 				video.currentTime = window.pageYOffset/600;
