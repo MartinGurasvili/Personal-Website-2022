@@ -19,6 +19,14 @@ html, body {
 img{
 	pointer-events: none
 }
+svg path,
+svg rect{
+  fill: #00FFFF;
+}
+#ho{
+	position:relative;
+	top:550px;
+}
 video::-webkit-media-controls-start-playback-button {   display: none !important; } 
 .loaderr
 {
@@ -714,7 +722,9 @@ a, button, input, select {
   }
 
   @media all and ( max-width: 600px ) {
-	
+	#ho{
+		top:350px;
+	}
 	.bar{
 		font-size: 15px;
 	}
