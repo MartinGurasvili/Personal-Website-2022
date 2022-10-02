@@ -25,7 +25,7 @@ svg rect{
 }
 #ho{
 	position:relative;
-	top:550px;
+	top:500px;
 }
 video::-webkit-media-controls-start-playback-button {   display: none !important; } 
 .loaderr
@@ -723,7 +723,7 @@ a, button, input, select {
 
   @media all and ( max-width: 600px ) {
 	#ho{
-		top:350px;
+		top:250px;
 	}
 	.bar{
 		font-size: 15px;
