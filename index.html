@@ -8,11 +8,16 @@
 		<link type="text/css" rel="stylesheet" href="main.css">
 		<meta name="theme-color" content="#000000">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
 		
 		
 		<style>img[alt="www.000webhost.com"] {display:none;}</style>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	 	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+		
+	
+		
 	</head>
 	<body >
 		
@@ -35,10 +40,42 @@
 		</svg></div></center>
 		</div>
 		
-		<video id="v0" tabindex="0" autobuffer="autobuffer"  preload="metadata" muted preload src="img/world.mp4">
+		<video id="v0" tabindex="0" autobuffer="autobuffer"  preload="metadata" muted src="https://martingoogle.imgix.net/world1.mp4">
 		  <!-- <source  type="video/webm" src="img/world1.webm" ></source> -->
 		</video>
-
+		<script>
+		
+			video = document.getElementById('v0'); 
+			 var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+			 
+			var ua = navigator.userAgent.toLowerCase(); 
+			if (ua.indexOf('safari') != -1) { 
+			  if (!(ua.indexOf('chrome') > -1)) {
+				  if (!isIOS){
+					video.src = 'https://martingoogle.imgix.net/world.webm';
+					video.load();
+				  }
+			  }
+			}
+			// if(!isIOS){
+			//     video.src = 'https://martingoogle.imgix.net/world.webm';
+			//     video.load();
+			// }
+			
+			//video.setAttribute('type', 'mp4');
+			//video.load();
+			
+			const scrollVideo = ()=>{
+				if(video.duration) {
+					video.currentTime = (Math.round((window.pageYOffset/600)*100) / 100);
+				}
+				requestAnimationFrame(scrollVideo);
+				
+			}
+			requestAnimationFrame(scrollVideo);
+			
+			
+		</script>
 		
 		
 		<article class="main">
@@ -126,16 +163,14 @@
 							<div class="row">
 
 								<div class="col-sm-4">
-									<img class="mx-auto d-block" src="img/bb.png">
+									<img class="mx-auto d-block" src="img/fs.png">
 								</div>
 								<div class="col-lg-8">
-									<h1>Blue Bubble</h1>
+									<h1>Final Straw</h1>
 									<br>
-									<p class="mx-auto d-block">This is a Decentrilised Peer to Peer Chat Application.<br>
-
-										That makes sure only nessasary data is Decentrilised whilst the majority is local to the device <br> Loaded with a modern UI and features other P2P apps lack  </p>
+									<p class="mx-auto d-block">This is a Virtual reality demo made using Unreal Engine 5 to test the capabilities of graphics in VR, experimenting with accessibility features, finger tracking, full kinematic body - being as interactive as possible.<br> </p>
 										
-										<a class="mx-auto d-block" href="https://github.com/MartinGurasvili/BlueBubble" target="_blank" rel="noopener noreferrer">GitHub Repo Link</a>	
+										<a class="mx-auto d-block" href="https://vecter-games.itch.io/the-final-straw" target="_blank" rel="noopener noreferrer">Check Out The Progress</a>	
 										<br>
 									</div>
 							</div>
@@ -274,6 +309,41 @@
 								</div>
 							</div>
 						</div>
+						<div class="carousel__slide" style='--image:url("img/7.jpg")' >
+					
+							<div class="col">
+								<div class="blur"></div>
+							
+							<div class="row" >
+								<div class="raised">
+								<center><div class="carousel__title" ><h1 class="mx-auto d-block" >BlueBubble</h1></div>
+								<div class="mx-auto d-block">
+									<img class="carousel__appicon" src="img/bb.png">
+								</div></center>
+								<div class="content" >
+									
+									
+									<center><p class="mx-auto d-block" >
+										
+									<br>
+									<br><br>
+									<br>
+									This is a Decentrilised Peer to Peer Chat Application.
+									<br>
+									<br>
+									SHOWCASE OF SKILLS
+									<br>
+									Python - QML - QT Framework
+									<br>
+									UI | UX Design - Networking
+								</p>
+								<a href="https://github.com/MartinGurasvili/BlueBubble"  target="_blank" rel="noopener noreferrer">Explore Further</a>
+								</center>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
 
 						<div class="carousel__slide" style='--image:url("img/nj.jpg")' >
 					
@@ -643,6 +713,42 @@
 </div>
 </div>
 
+<div class="carousel__slide" style='--image:url("img/7.jpg")' >
+					
+	<div class="col">
+		<div class="blur"></div>
+	
+	<div class="row" >
+		<div class="raised">
+		<center><div class="carousel__title" ><h1 class="mx-auto d-block" >BlueBubble</h1></div>
+		<div class="mx-auto d-block">
+			<img class="carousel__appicon" src="img/bb.png">
+		</div></center>
+		<div class="content" >
+			
+			
+			<center><p class="mx-auto d-block" >
+				
+			<br>
+			<br><br>
+			<br>
+			This is a Decentrilised Peer to Peer Chat Application.
+			<br>
+			<br>
+			SHOWCASE OF SKILLS
+			<br>
+			Python - QML - QT Framework
+			<br>
+			UI | UX Design - Networking
+		</p>
+		<a href="https://github.com/MartinGurasvili/BlueBubble"  target="_blank" rel="noopener noreferrer">Explore Further</a>
+		</center>
+		</div>
+	</div>
+	</div>
+</div>
+</div>
+
 <div class="carousel__slide" style='--image:url("img/nj.jpg")' >
 
 <div class="col">
@@ -948,7 +1054,7 @@ This is a sudoku game aswell as solver
 							<div class="collapse multi-collapse" id="ml" >		   
 							<div class="bar" data-skill="Python" style="--color:rgb(68,110,154);--wid:90%"><img src="https://cdn.svgporn.com/logos/python.svg"></div>
 							<div class="bar" data-skill="Numpy" style="--color:rgb(102,169,203);--wid:50%"><img src="https://user-images.githubusercontent.com/67586773/105040771-43887300-5a88-11eb-9f01-bee100b9ef22.png"></div>
-							<div class="bar" data-skill="MatPlotLib" style="--color:rgb(245,175,137);--wid:60%"><img  src="https://cdn.svgporn.com/logos/matplotlib-icon.svg"></div>
+							<div class="bar" data-skill="MatPlotLib" style="--color:rgb(245,175,137);--wid:60%"><img  src="img/mpl.png"></div>
 							<div class="bar" data-skill="Selenium" style="--color:rgb(27, 221, 75);--wid:70%"><img  src="https://camo.githubusercontent.com/74ed64243ba05754329bc527cd4240ebd1c087a1/68747470733a2f2f73656c656e69756d2e6465762f696d616765732f73656c656e69756d5f6c6f676f5f7371756172655f677265656e2e706e67"></div>
 							
 							<div class="bar" data-skill="SciPy" style="--color:rgb(32,85,160);--wid:40%"><img  src="https://docs.scipy.org/doc/scipy/_static/logo.svg"></div>
@@ -987,9 +1093,9 @@ This is a sudoku game aswell as solver
 							<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#cs" aria-expanded="false" aria-controls="cs" id="dropdown" onmouseover="slidedown(this)" onmouseout="slideup(this)">Cyber Security</button>
 								
 							<div class="collapse multi-collapse" id="cs">
-							<div class="bar" data-skill="Azure" style="--color:rgb(104,200,239);--wid:40%"><img src="https://play-lh.googleusercontent.com/TckA-A_COVAujJtzvpgGhwVkkYCBEDbZe-GLaA9kVbZra1Vcoy7oPXCUG3y0GP2AZg"></div>
+							<div class="bar" data-skill="Azure" style="--color:rgb(104,200,239);--wid:40%"><img src="img/azure.png"></div>
 							<div class="bar" data-skill="Zscalar" style="--color:rgb(67,154,215);--wid:30%"><img src="https://www.vodafone.com/business/media/image/1508904699350/image-6%402x.png"></div>
-							<div class="bar" data-skill="Ms_Defender_ATP" style="--color:rgb(83,180,235);--wid:40%"><img src="https://play-lh.googleusercontent.com/wzuhOux_qLUogHofG-ZJLMaFsGfBmKJgMQwB6qAVWAb9jH6y-y7VZEKRxCxERUU5gd0"></div>
+							<div class="bar" data-skill="Ms_Defender_ATP" style="--color:rgb(83,180,235);--wid:40%"><img src="img/deff.png"></div>
 							<div class="bar" data-skill="PowerShell" style="--color:rgb(76,112,200);--wid:25%"><img src="https://devblogs.microsoft.com/powershell/wp-content/uploads/sites/30/2018/09/Powershell_256.png"></div>
 							<div class="bar" data-skill="Kali" style="--color:rgb(43,110,246);--wid:20%"><img src="https://learnkali.org/wp-content/uploads/2021/06/Logo.png"></div>
 							</div>
@@ -1027,7 +1133,7 @@ This is a sudoku game aswell as solver
 								<img src="https://publichealth.gsu.edu/files/2020/11/Linkedin-Logo.png" alt="Martin Gurasvili LinkedIn">
 							</div><div class="social-card">
 								<br>
-								<img src="https://media-exp1.licdn.com/dms/image/C4E03AQG_BScgbezczg/profile-displayphoto-shrink_200_200/0/1657287637770?e=1665619200&v=beta&t=FijY3Nn6KYNWf2IZUdzDBjs3Na_cmTjz1irML4gM8mU" alt="Martin Gurasvili LinkedIn Profile Picture">
+								<img src="https://media-exp1.licdn.com/dms/image/C4E03AQG_BScgbezczg/profile-displayphoto-shrink_400_400/0/1657287637770?e=1671062400&v=beta&t=7RJ0ExhnTYN8Ocetv0Y5q3wq01zBZH7XaGzT3clDJJE" alt="Martin Gurasvili LinkedIn Profile Picture">
 								<h1>Martin Gurasvili</h1>
 								<p>Finishing T-Level Course | Cyber Security Intern at OCC</p>
 								<p >Oxford Council | Oxford College</p>
@@ -1043,7 +1149,7 @@ This is a sudoku game aswell as solver
 									
 									
 									<br>
-									<img src="https://avatars.githubusercontent.com/u/76784461?v=4" alt="Martin Gurasvili Github Profile Picture">
+									<img src="img/vecter.png" alt="Martin Gurasvili Github Profile Picture">
 									<h1>Martin Gurasvili</h1>
 									<p >👨🏼‍💻 Passionate Developer 📚 Interested to learn and improve 🌍 Feel free to use and improve code</p>
 									<p >Follow My Work</p> 
@@ -1123,50 +1229,10 @@ This is a sudoku game aswell as solver
 					
 			</section>
 		</article>
-
+  
 	
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-	 	
 	
-	<script>
-		var loader = document.getElementById("preloader")
-		
-		window.addEventListener("load",function(){
-		var k = window.setInterval(function() {
-			if (!loader.style.opacity) {
-				loader.style.opacity = 1;
-			}
-			if (loader.style.opacity > 0) {
-				loader.style.opacity -= 0.05;
-			} else {
-				clearInterval(k);
-				loader.style.display = "none";
-			}
-		}, 0.5);
-	})
-		
-
-	</script>
-	<script>
-		
-		video = document.getElementById('v0'); 
-		var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-		if (!isIOS) {
-    	video.src = 'img/world1.webm';
-		//video.setAttribute('type', 'mp4');
-		video.load();
-		}
-		const scrollVideo = ()=>{
-			if(video.duration) {
-				video.currentTime = window.pageYOffset/600;
-			}
-			requestAnimationFrame(scrollVideo);
-			
-		}
-		requestAnimationFrame(scrollVideo);
-		
-		
-	</script>
+	
 		<script>
 			function delay(time) {
 				return new Promise(resolve => setTimeout(resolve, time));
@@ -1262,6 +1328,9 @@ This is a sudoku game aswell as solver
 					}, 10);
 	</script>
 		<script>
+		    
+		    
+		    
 			window.onscroll = function() {myFunction()};
 
 			// Get the navbar
@@ -1287,6 +1356,26 @@ This is a sudoku game aswell as solver
 				
 			}
 			}
+		</script>
+		<script>
+			var loader = document.getElementById("preloader")
+			
+			window.addEventListener("load",function(){
+				myFunction()
+			var k = window.setInterval(function() {
+				if (!loader.style.opacity) {
+					loader.style.opacity = 1;
+				}
+				if (loader.style.opacity > 0) {
+					loader.style.opacity -= 0.05;
+				} else {
+					clearInterval(k);
+					loader.style.display = "none";
+				}
+			}, 0.5);
+		})
+			
+	
 		</script>
 		</body>
 </html>
