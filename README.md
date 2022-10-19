@@ -11,13 +11,15 @@
     <br>
     Code for my personal website made in 2022
     <br />
-    <br>
-    <a href="https://www.martingur.com"><h3>Visit Website</h3>
-    <br />
+    </p>
+   <center><a href="https://www.martingur.com">Visit Website</a></center>
+   </div>
+<br>
+    
 
     
-  </p>
-</div>
+  
+
 <div align="center">
   <a href="www.martingur.com">
     <img  src="https://user-images.githubusercontent.com/76784461/189243971-355dc1e5-b823-461e-b28f-6caff9e68707.gif">
