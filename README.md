@@ -22,7 +22,7 @@
 
 <div align="center">
   <a href="www.martingur.com">
-    <img  src="https://user-images.githubusercontent.com/76784461/189243971-355dc1e5-b823-461e-b28f-6caff9e68707.gif">
+    <img  src="https://user-images.githubusercontent.com/76784461/198206548-0f51fde5-e955-439e-9c04-900a642ae9a5.gif">
   </a>
 </div>
 
