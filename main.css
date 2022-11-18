@@ -16,9 +16,9 @@ html, body {
 
 	
 }
-img{
+/* img{
 	pointer-events: none
-}
+} */
 svg path,
 svg rect{
   fill: #00FFFF;
@@ -56,6 +56,8 @@ html {
 
 
   }
+
+
 
 a:link {
 	text-decoration: none;
@@ -129,6 +131,19 @@ button {
 	width: 100%;
   }
   
+.cert{
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	border-radius: 25px;
+	margin: 50px;
+	width:40%;
+	opacity: 1;
+	transition: 0.5s all ease;
+}
+.cert:hover{
+	opacity: 0.6;
+
+	
+}
 #info {
 	
 	font-weight: 10;
@@ -221,6 +236,15 @@ button {
 	font-family:"mais";
 	width: 110%;
 	font-size: 4.3vh;
+	left: -1px;
+	
+}
+#last h2{
+	
+	position: absolute;
+	font-family:"mais";
+	width: 110%;
+	font-size: 5vh;
 	left: -1px;
 	
 }
@@ -722,6 +746,10 @@ a, button, input, select {
   }
 
   @media all and ( max-width: 600px ) {
+	.cert{
+		width:90%;
+		margin: 10px;
+	}
 	#ho{
 		top:250px;
 	}
